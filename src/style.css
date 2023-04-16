@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  padding: 5px;
+  background-color: #161b22;
+}
+
+#app {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.editor {
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  right: calc(25% - 50px);
+  z-index: 1;
+}
+
+.editor textarea {
+  background-color: #152238;
+}
+
+.sub-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.preview {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border: none;
+  visibility: hidden;
+}
+
+.preview button {
+  position: absolute;
+  width: 100px;
+  right: calc(25% - 50px);
+}
+
+.terminal {
+  width: 50%;
+  height: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.xterm .xterm-viewport {
+  /* On OS X this is required in order for the scroll bar to appear fully opaque */
+  background-color: transparent;
+  overflow-y: scroll;
+  cursor: default;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+}
+
+.xterm-viewport::-webkit-scrollbar {
+  width: 5px;
+}
+
+.xterm-viewport::-webkit-scrollbar-thumb {
+  background: var(--highlight);
+}
+
+.hidden {
+  display: none;
+}
