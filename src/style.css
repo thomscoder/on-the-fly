@@ -48,6 +48,7 @@ html, body {
   position: absolute;
   width: 100px;
   right: calc(25% - 50px);
+  bottom: 0;
 }
 
 .terminal {

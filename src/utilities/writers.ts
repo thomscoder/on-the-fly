@@ -28,3 +28,10 @@ export const writeProcess = (process: WebContainerProcess, options: ProcessOptio
         return writeToConsole(process);
     }
 }
+
+export const writeInput = (process: WebContainerProcess, terminal: Terminal) => {
+    const input = process.input.getWriter();
+    terminal.onData((data) => {
+        input.write(data);
+    });
+}

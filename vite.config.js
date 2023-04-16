@@ -17,5 +17,5 @@ export default defineConfig({
             entry: 'monaco-graphql/dist/graphql.worker'
         }
     ]
-})],
+  })],
 });
