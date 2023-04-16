@@ -280,7 +280,7 @@ export const files = {
       },
       "tsconfig.json": {
         "file": {
-          "contents": "{\n  \"compilerOptions\": {\n    \"allowJs\": true,\n    \"target\": \"ES2017\",\n    \"module\": \"ES2020\",\n    \"lib\": [\"es2020\", \"DOM\", \"WebWorker\", \"DOM.Iterable\"],\n    \"jsx\": \"react-jsx\",\n    \"jsxImportSource\": \"@builder.io/qwik\",\n    \"strict\": true,\n    \"forceConsistentCasingInFileNames\": true,\n    \"resolveJsonModule\": true,\n    \"moduleResolution\": \"node\",\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"incremental\": true,\n    \"isolatedModules\": true,\n    \"outDir\": \"tmp\",\n    \"noEmit\": true,\n    \"types\": [\"node\", \"vite/client\"],\n    \"paths\": {\n      \"~/*\": [\"./src/*\"]\n    }\n  },\n  \"files\": [\"./.eslintrc.cjs\"],\n  \"include\": [\"src\"]\n}\n"
+          "contents": "{\n  \"compilerOptions\": {\n    \"allowJs\": true,\n    \"target\": \"ES2017\",\n    \"module\": \"ES2020\",\n    \"lib\": [\"es2020\", \"DOM\", \"WebWorker\", \"DOM.Iterable\"],\n    \"jsx\": \"react-jsx\",\n    \"jsxImportSource\": \"@builder.io/qwik\",\n    \"strict\": true,\n    \"forceConsistentCasingInFileNames\": true,\n    \"resolveJsonModule\": true,\n    \"moduleResolution\": \"node\",\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"incremental\": true,\n    \"noEmitOnError\": false,\n    \"isolatedModules\": true,\n    \"outDir\": \"tmp\",\n    \"noEmit\": true,\n    \"types\": [\"node\", \"vite/client\"],\n    \"paths\": {\n      \"~/*\": [\"./src/*\"]\n    }\n  },\n  \"files\": [\"./.eslintrc.cjs\"],\n  \"include\": [\"src\"],\n}\n"
         }
       },
       "vite.config.ts": {

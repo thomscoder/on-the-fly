@@ -11,11 +11,5 @@ export default defineConfig({
   },
   plugins: [monacoEditorPlugin.default({
     languageWorkers: ['json', 'editorWorkerService'],
-    customWorkers: [
-        {
-            label: 'graphql',
-            entry: 'monaco-graphql/dist/graphql.worker'
-        }
-    ]
   })],
 });

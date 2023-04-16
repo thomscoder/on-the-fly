@@ -15,5 +15,6 @@
     "noImplicitReturns": true,
     "skipLibCheck": true
   },
-  "include": ["src", "vite.config.js"]
+  "include": ["src"],
+  "exclude": ["src/projects/qwik-app"]
 }

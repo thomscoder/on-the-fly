@@ -55,7 +55,7 @@ export const listenToElementChanges = (
   const model = monacoEditor.getModel();
   if (!model) return;
 
-  monacoEditor.onDidBlurEditorText(async (e) => {
+  monacoEditor.onDidBlurEditorText(async () => {
     // click outside
     const value = model.getValue();
     writeIndexJS(path, webcontainerInstance, value);
